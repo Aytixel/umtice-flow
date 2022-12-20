@@ -38,6 +38,15 @@ a.focus, a:focus {
 }
 
 /*
+    Button
+*/
+.btn:focus {
+    outline: var(--accent-color) solid 0.15em;
+
+    box-shadow: none;
+}
+
+/*
     Button outline secondary
 */
 .btn-outline-secondary {
