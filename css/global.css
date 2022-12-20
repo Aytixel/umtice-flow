@@ -95,8 +95,8 @@ a.focus, a:focus {
     line-height: 2.5em;
 }
 
-.dropdown-item.active, .dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus, .dropdown-item:focus-within {
-    background-color: var(--accent-color);
+.dropdown-item.active, .dropdown-item.focus, .dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus, .dropdown-item:focus-within {
+    background-color: var(--accent-color) !important;
 
     color: var(--light-color) !important;
 }
