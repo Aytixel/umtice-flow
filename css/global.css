@@ -9,3 +9,17 @@
 * {
     font-family: 'Mulish', sans-serif;
 }
+
+/*
+    Progress bar
+*/
+.progress {
+    height: 0.75em;
+
+    border: 0;
+    border-radius: 0.375em;
+}
+
+.progress .progress-bar {
+    background-color: var(--accent-color);
+}
