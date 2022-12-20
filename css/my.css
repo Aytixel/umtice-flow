@@ -20,7 +20,7 @@
     color: var(--light-color) !important;
 }
 
-.card-deck .card .categoryname {
+.card-deck .card .card-body > div > div > div:first-child {
     font-size: 1.3em;
     font-weight: bold;
 }
@@ -62,4 +62,8 @@
     z-index: 1;
 
     background: none !important;
+}
+
+.card-deck .card .coursemenubtn:hover, .card-deck .card .coursemenubtn:focus {
+    background-color: var(--dark-color) !important;
 }
