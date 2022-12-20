@@ -4,6 +4,23 @@
     font-family: 'Mulish', sans-serif;
 }
 
+::selection {
+    background-color: var(--accent-color);
+}
+
+/*
+    Link
+*/
+a.focus, a:focus {
+    background-color: initial !important;
+
+    outline: none !important;
+    
+    box-shadow: none !important;
+
+    text-decoration: underline !important;
+}
+
 /*
     Progress bar
 */
