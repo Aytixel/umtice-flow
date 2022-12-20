@@ -21,8 +21,38 @@
 }
 
 /*
-    Drop down
+    Button outline secondary
 */
+.btn-outline-secondary {
+    background-color: var(--light-color) !important;
+
+    color: var(--dark-color) !important;
+
+    transition: 0.1s ease-in-out box-shadow;
+}
+
+.btn-outline-secondary:focus, .btn-outline-secondary.focus {
+    color: var(--dark-color);
+
+    outline: var(--accent-color) solid 0.2em !important;
+}
+
+.btn-outline-secondary:hover {
+    color: var(--dark-color);
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
+}
+
+/*
+    Dropdown
+*/
+.dropdown-toggle {
+    border: 0;
+    border-radius: 1em;
+
+    box-shadow: none;
+}
+
 .dropdown-menu {
     padding: 0;
 
