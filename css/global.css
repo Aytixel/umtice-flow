@@ -34,7 +34,9 @@
 .btn-outline-secondary:focus, .btn-outline-secondary.focus {
     color: var(--dark-color);
 
-    outline: var(--accent-color) solid 0.2em !important;
+    outline: var(--accent-color) solid 0.15em !important;
+
+    box-shadow: none;
 }
 
 .btn-outline-secondary:hover {
@@ -62,6 +64,11 @@
     background-color: var(--light-color);
 
     box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
+}
+
+.dropdown-divider {
+    border-width: 0.15em;
+    border-color: var(--dark-color);
 }
 
 .dropdown-item {
