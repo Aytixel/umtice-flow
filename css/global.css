@@ -36,6 +36,8 @@
     border-radius: 1em;
 
     background-color: var(--light-color);
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
 }
 
 .dropdown-item {
@@ -45,6 +47,6 @@
     line-height: 2.5em;
 }
 
-.dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus, .dropdown-item:focus-within {
+.dropdown-item.active, .dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus, .dropdown-item:focus-within {
     background-color: #db4c3b;
 }
