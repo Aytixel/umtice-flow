@@ -47,7 +47,7 @@
 }
 
 .card-deck .card .card-body {
-    z-index: 1;
+    z-index: 2;
 
     min-height: 7em;
 
