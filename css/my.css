@@ -44,8 +44,8 @@
 
     border-radius: 1rem;
     
-    -webkit-mask-image: linear-gradient(#00000081, #0000003d);
-    mask-image: linear-gradient(#00000081, #0000003d);
+    -webkit-mask-image: linear-gradient(#00000063, #0000001e);
+    mask-image: linear-gradient(#00000063, #0000001e);
 }
 
 .card-deck .card .card-body {
