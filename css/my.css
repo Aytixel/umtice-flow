@@ -14,7 +14,7 @@
     border-radius: 1rem;
 }
 
-.card-deck .card * {
+.card-deck .card *:not(.dropdown-item) {
     color: var(--light-color) !important;
 }
 
@@ -57,5 +57,5 @@
 .card-deck .card .card-footer {
     z-index: 1;
 
-    background: none;
+    background: none !important;
 }
