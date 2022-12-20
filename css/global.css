@@ -37,7 +37,7 @@ a.focus, a:focus {
     border: 0 !important;
     border-radius: 0.375em;
 
-    background-color: var(--light-color);
+    background-color: var(--light-color) !important;
 }
 
 .progress-bar {
