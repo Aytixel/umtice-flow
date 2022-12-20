@@ -98,10 +98,20 @@ a.focus, a:focus {
 }
 
 .dropdown-item {
+    margin: 0.2em 0;
+
     border-radius: 1em;
 
     color: var(--dark-color) !important;
     line-height: 2.5em;
+}
+
+ul.dropdown-menu li:first-child .dropdown-item, div.dropdown-menu .dropdown-item:first-child {
+    margin-top: 0;
+}
+
+ul.dropdown-menu li:last-child .dropdown-item, div.dropdown-menu .dropdown-item:last-child {
+    margin-bottom: 0;
 }
 
 .dropdown-item.active, .dropdown-item.focus, .dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus, .dropdown-item:focus-within {
