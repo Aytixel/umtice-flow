@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
 
-:root {
-    --light-color: #ffffff;
-    --accent-color: #db4c3b;
-    --dark-color: #292929;
-}
-
 * {
     font-family: 'Mulish', sans-serif;
 }
@@ -48,5 +42,7 @@
 }
 
 .dropdown-item.active, .dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus, .dropdown-item:focus-within {
-    background-color: #db4c3b;
+    background-color: var(--accent-color);
+
+    color: var(--light-color) !important;
 }
