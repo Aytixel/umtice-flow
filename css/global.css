@@ -9,6 +9,13 @@
 }
 
 /*
+    Icon
+*/
+.navbar .usermenu .icon, .icon, .icon::before, .icon::after {
+    color: inherit !important;
+}
+
+/*
     Link
 */
 a.focus, a:focus {
