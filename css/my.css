@@ -1,0 +1,61 @@
+/*
+    Card
+*/
+.card-deck {
+    gap: 0.5em;
+
+    margin: 1em 0;
+}
+
+.card-deck .card {
+    margin: 0;
+
+    border: 0;
+    border-radius: 1rem;
+}
+
+.card-deck .card * {
+    color: var(--light-color) !important;
+}
+
+.card-deck .card .categoryname {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.card-deck .card > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    border-radius: 1rem;
+
+    background-color: var(--dark-color);
+}
+
+.card-deck .card .dashboard-card-img {
+    height: 100%;
+    width: 100%;
+
+    border-radius: 1rem;
+    
+    -webkit-mask-image: linear-gradient(#00000081, #0000003d);
+    mask-image: linear-gradient(#00000081, #0000003d);
+}
+
+.card-deck .card .card-body {
+    z-index: 1;
+
+    min-height: 7em;
+
+    padding: 1em !important;
+}
+
+.card-deck .card .card-footer {
+    z-index: 1;
+
+    background: none;
+}
