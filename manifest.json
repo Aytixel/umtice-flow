@@ -13,7 +13,7 @@
         ]
     },
     {
-        "matches": ["*://umtice.univ-lemans.fr/my/"],
+        "matches": ["*://umtice.univ-lemans.fr/my/*"],
         "css": ["css/my.css"]
     },
     {
@@ -28,7 +28,7 @@
         ]
     },
     {
-        "matches": ["*://umtice2.univ-lemans.fr/my/"],
+        "matches": ["*://umtice2.univ-lemans.fr/my/*"],
         "css": ["css/my.css"]
     },
     {
