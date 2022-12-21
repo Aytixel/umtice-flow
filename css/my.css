@@ -1,4 +1,18 @@
 /*
+    Page header
+*/
+#page-header {
+    display: none;
+}
+
+/*
+    Page content
+*/
+#page-content {
+    margin-top: 1em;
+}
+
+/*
     Card
 */
 .card-deck {
