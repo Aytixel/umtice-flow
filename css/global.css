@@ -18,17 +18,26 @@
 }
 
 /*
-    Usermenu
-*/
-.usermenu .usertext {
-    color: var(--light-color);
-}
-
-/*
     Icon
 */
 .navbar .usermenu .icon, .icon, .icon::before, .icon::after {
     color: inherit !important;
+}
+
+/*
+    Navbar
+*/
+.navbar {
+    border: 0;
+    background-color: var(--accent-color) !important;
+}
+
+.navbar *, .navbar ul:first-of-type *::before, .navbar ul:first-of-type *::after {
+    color: var(--light-color) !important;
+}
+
+.navbar .dropdown-item, .navbar .dropdown-item * {
+    color: var(--dark-color) !important;
 }
 
 /*
@@ -159,7 +168,7 @@ a.focus, a:focus {
 }
 
 :is(.dropdown-item.active, .dropdown-item.focus, .dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus, .dropdown-item:focus-within) * {
-    color: var(--light-color);
+    color: var(--light-color) !important;
 }
 
 /*
@@ -204,13 +213,6 @@ a.focus, a:focus {
 }
 
 /*
-    Page
-*/
-#page {
-    background-color: var(--light-color);
-}
-
-/*
     Card
 */
 .card {
@@ -238,4 +240,27 @@ section {
     background-color: var(--light-color);
 
     box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
+}
+
+/*
+    Page
+*/
+#page {
+    background-color: var(--light-color);
+}
+
+/*
+    Page footer
+*/
+footer#page-footer {
+    border: 0;
+    background-color: var(--dark-color) !important;
+}
+
+footer#page-footer * {
+    color: var(--light-color);
+}
+
+footer#page-footer a {
+    color: var(--accent-color) !important;
 }
