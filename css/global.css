@@ -134,6 +134,41 @@ a.focus, a:focus {
     text-decoration: none !important;
 }
 
+.dropdown-item.active a, .dropdown-item.focus a, .dropdown-item:hover a, .dropdown-item:active a, .dropdown-item:focus a, .dropdown-item:focus-within a {
+    text-decoration: none !important;
+}
+
+/*
+    List group
+*/
+.list-group-item {
+    margin: 0.5em 0;
+
+    border: 0;
+    border-radius: 1em;
+
+    background-color: var(--light-color);
+
+    color: var(--dark-color);
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
+
+    transition: 0.1s ease-in-out background-color, 0.1s ease-in-out color;
+}
+
+.list-group-item.active, .list-group-item:hover, .list-group-item:focus {
+    background-color: var(--accent-color) !important;
+
+    color: var(--light-color);
+    text-decoration: none !important;
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+}
+
+.list-group-item:focus {
+    outline: var(--accent-color) solid 0.15em !important;
+}
+
 /*
     Page
 */
@@ -157,5 +192,16 @@ a.focus, a:focus {
     Section
 */
 section {
+    border: 0 !important;
+
     overflow: visible !important;
+}
+
+/*
+    Nav drawer
+*/
+#nav-drawer {
+    background-color: var(--light-color);
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
 }
