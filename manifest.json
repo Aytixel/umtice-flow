@@ -8,8 +8,8 @@
     {
         "matches": ["*://umtice.univ-lemans.fr/*"],
         "css": [
-          "css/global.css",
-          "css/pallet-1.css"
+          "css/pallet-1.css",
+          "css/global.css"
         ]
     },
     {
@@ -23,8 +23,8 @@
     {
         "matches": ["*://umtice2.univ-lemans.fr/*"],
         "css": [
-          "css/global.css",
-          "css/pallet-2.css"
+          "css/pallet-2.css",
+          "css/global.css"
         ]
     },
     {
