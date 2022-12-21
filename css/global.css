@@ -34,6 +34,10 @@
     box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
 }
 
+.navbar .btn {
+    box-shadow: none;
+}
+
 .navbar .btn[data-action="toggle-drawer"] {
     aspect-ratio: 1 / 1;
 
@@ -105,6 +109,13 @@ a.focus, a:focus {
 /*
     Button
 */
+.btn {
+    border: 0;
+    border-radius: 1em !important;
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
+}
+
 .btn:focus {
     outline: var(--accent-color) solid 0.15em;
 
@@ -260,12 +271,41 @@ a.focus, a:focus {
     box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
 }
 
+.input-group :is(.btn, input) {
+    box-shadow: none;
+}
+
 .input-group * {
     border: 0 !important;
+    border-radius: 1em !important;
 
     background-color: transparent !important;
 
     color: var(--dark-color) !important;
+}
+
+/*
+    Form control
+*/
+.form-control, .custom-select {
+    border: 0;
+    border-radius: 1em !important;
+
+    background-color: var(--light-color) !important;
+
+    color: var(--dark-color) !important;
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
+}
+
+.form-control:read-only {
+    color: var(--accent-color) !important;
+}
+
+.form-control:focus, .custom-select:focus {
+    outline: var(--accent-color) solid 0.15em;
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
 }
 
 /*
