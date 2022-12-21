@@ -146,6 +146,10 @@ a.focus, a:focus {
     box-shadow: none;
 }
 
+.dropdown-toggle:focus {
+    text-decoration: none !important;
+}
+
 .dropdown-menu {
     flex-direction: column;
     gap: 0.2em;
@@ -167,7 +171,7 @@ a.focus, a:focus {
 }
 
 .dropdown-divider {
-    border-width: 0.15em;
+    border-width: 0.1em;
     border-color: var(--dark-transparent-color);
 
     backdrop-filter: blur(0.4em);
@@ -246,6 +250,25 @@ a.focus, a:focus {
 }
 
 /*
+    Input group
+*/
+.input-group {
+    border-radius: 1em !important;
+
+    background-color: var(--light-color) !important;
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
+}
+
+.input-group * {
+    border: 0 !important;
+
+    background-color: transparent !important;
+
+    color: var(--dark-color) !important;
+}
+
+/*
     Card
 */
 .card {
@@ -298,4 +321,11 @@ footer#page-footer * {
 
 footer#page-footer a {
     color: var(--accent-color) !important;
+}
+
+/*
+    Searchform navbar
+*/
+#searchform-navbar {
+    background-color: transparent;
 }
