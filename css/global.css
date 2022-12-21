@@ -369,3 +369,30 @@ footer#page-footer a {
 #searchform-navbar {
     background-color: transparent;
 }
+
+/*
+    Popover region
+*/
+.popover-region-container {
+    border: 0;
+    border-radius: 1em;
+
+    background-color: var(--light-transparent-color);
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
+
+    backdrop-filter: blur(0.4em);
+}
+
+.popover-region-container * {
+    color: var(--dark-color) !important;
+}
+
+.popover-region-container > div:first-child, .popover-region-container > a > div {
+    border-width: 0.1em;
+    border-color: var(--dark-transparent-color);
+}
+
+#nav-notification-popover-container .popover-region-toggle::after {
+    display: none;
+}
