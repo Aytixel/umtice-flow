@@ -123,6 +123,46 @@ a.focus, a:focus {
 }
 
 /*
+    Button primary
+*/
+.btn-primary {
+    background-color: var(--accent-color) !important;
+
+    text-decoration: none !important;
+}
+
+.btn-primary:active, .btn-primary:focus {
+    background-color: var(--light-color) !important;
+    
+    color: var(--dark-color) !important;
+
+    text-decoration: none !important;
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+}
+
+/*
+    Button secondary
+*/
+.btn-secondary {
+    background-color: var(--dark-color) !important;
+    
+    color: var(--light-color) !important;
+
+    text-decoration: none !important;
+}
+
+.btn-secondary:active, .btn-secondary:focus {
+    background-color: var(--light-color) !important;
+    
+    color: var(--dark-color) !important;
+
+    text-decoration: none !important;
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+}
+
+/*
     Button outline secondary
 */
 .btn-outline-secondary {
