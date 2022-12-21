@@ -2,10 +2,26 @@
 
 * {
     font-family: 'Mulish', sans-serif;
+
+    color: var(--dark-color);
 }
 
 ::selection {
     background-color: var(--accent-color);
+}
+
+/*
+    Logo
+*/
+.logo {
+    color: var(--light-color);
+}
+
+/*
+    Usermenu
+*/
+.usermenu .usertext {
+    color: var(--light-color);
 }
 
 /*
@@ -134,8 +150,16 @@ a.focus, a:focus {
     text-decoration: none !important;
 }
 
-.dropdown-item.active a, .dropdown-item.focus a, .dropdown-item:hover a, .dropdown-item:active a, .dropdown-item:focus a, .dropdown-item:focus-within a {
+:is(.dropdown-item.active, .dropdown-item.focus, .dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus, .dropdown-item:focus-within) a {
     text-decoration: none !important;
+}
+
+.dropdown-item * {
+    transition: 0.1s ease-in-out color;
+}
+
+:is(.dropdown-item.active, .dropdown-item.focus, .dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus, .dropdown-item:focus-within) * {
+    color: var(--light-color);
 }
 
 /*
@@ -156,7 +180,7 @@ a.focus, a:focus {
     transition: 0.1s ease-in-out background-color, 0.1s ease-in-out color;
 }
 
-.list-group-item.active, .list-group-item:hover, .list-group-item:focus {
+.list-group-item.active, .list-group-item:active, .list-group-item:hover {
     background-color: var(--accent-color) !important;
 
     color: var(--light-color);
@@ -165,7 +189,17 @@ a.focus, a:focus {
     box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
 }
 
+.list-group-item * {
+    transition: 0.1s ease-in-out color;
+}
+
+:is(.list-group-item.active, .list-group-item:active, .list-group-item:hover) * {
+    color: var(--light-color);
+}
+
 .list-group-item:focus {
+    text-decoration: none !important;
+
     outline: var(--accent-color) solid 0.15em !important;
 }
 
