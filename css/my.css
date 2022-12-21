@@ -2,9 +2,17 @@
     Card
 */
 .card-deck {
+    display: flex;
+    flex-flow: column;
     gap: 0.5em;
 
     margin: 1em 0;
+}
+
+@media (min-width: 576px) {
+    .card-deck {
+        flex-flow: row wrap;
+    }
 }
 
 .card-deck .card {
