@@ -133,3 +133,29 @@ a.focus, a:focus {
 
     text-decoration: none !important;
 }
+
+/*
+    Page
+*/
+#page {
+    background-color: var(--light-color);
+}
+
+/*
+    Card
+*/
+.card {
+    border: 0 !important;
+    border-radius: 1em;
+
+    background-color: transparent !important;
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
+}
+
+/*
+    Section
+*/
+section {
+    overflow: visible !important;
+}

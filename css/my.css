@@ -9,11 +9,6 @@
 
 .card-deck .card {
     margin: 0;
-
-    border: 0;
-    border-radius: 1rem;
-
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
 }
 
 .card-deck .card *:not(.dropdown-item) {
