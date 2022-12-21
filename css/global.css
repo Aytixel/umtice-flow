@@ -431,6 +431,8 @@ footer#page-footer a {
 .popover-region-container > div:first-child, .popover-region-container > a > div {
     border-width: 0.1em;
     border-color: var(--dark-transparent-color);
+
+    background-color: transparent;
 }
 
 #nav-notification-popover-container .popover-region-toggle::after {
