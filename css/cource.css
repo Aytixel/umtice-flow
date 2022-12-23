@@ -1,7 +1,8 @@
 /*
     Course content
 */
-.course-content ul .section, .course-content hr {
+.course-content ul .section,
+.course-content hr {
     border-width: 0.1em !important;
     border-color: var(--dark-transparent-color) !important;
 }

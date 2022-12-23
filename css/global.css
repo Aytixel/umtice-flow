@@ -20,7 +20,11 @@
 /*
     Icon
 */
-.navbar .usermenu .icon, .navbar-dark a .icon, .icon, .icon::before, .icon::after {
+.navbar .usermenu .icon,
+.navbar-dark a .icon,
+.icon,
+.icon::before,
+.icon::after {
     color: inherit !important;
 }
 
@@ -70,17 +74,21 @@
     .navbar .btn[data-action="toggle-drawer"].active,
     .navbar .btn[data-action="toggle-drawer"]:active
 ) *,
-.navbar .dropdown-item, .navbar .dropdown-item * {
+.navbar .dropdown-item,
+.navbar .dropdown-item * {
     color: var(--dark-color) !important;
 }
 
-.navbar *, .navbar ul:first-of-type *::before, .navbar ul:first-of-type *::after {
+.navbar *,
+.navbar ul:first-of-type *::before,
+.navbar ul:first-of-type *::after {
     color: var(--light-color) !important;
 }
 /*
     Link
 */
-a.focus, a:focus {
+a.focus,
+a:focus {
     background-color: initial !important;
 
     outline: none !important;
@@ -131,7 +139,8 @@ a.focus, a:focus {
     text-decoration: none !important;
 }
 
-.btn-primary:active, .btn-primary:focus {
+.btn-primary:active,
+.btn-primary:focus {
     background-color: var(--light-color) !important;
     
     color: var(--dark-color) !important;
@@ -152,7 +161,8 @@ a.focus, a:focus {
     text-decoration: none !important;
 }
 
-.btn-secondary:active, .btn-secondary:focus {
+.btn-secondary:active,
+.btn-secondary:focus {
     background-color: var(--light-color) !important;
     
     color: var(--dark-color) !important;
@@ -173,7 +183,8 @@ a.focus, a:focus {
     transition: 0.1s ease-in-out box-shadow !important;
 }
 
-.btn-outline-secondary:focus, .btn-outline-secondary.focus {
+.btn-outline-secondary:focus,
+.btn-outline-secondary.focus {
     color: var(--dark-color) !important;
 
     outline: var(--accent-color) solid 0.15em !important;
@@ -239,7 +250,13 @@ a.focus, a:focus {
     transition: 0.1s ease-in-out background-color, 0.1s ease-in-out color !important;
 }
 
-.navbar .dropdown-item:hover, .dropdown-item.active, .dropdown-item.focus, .dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus, .dropdown-item:focus-within {
+.navbar .dropdown-item:hover,
+.dropdown-item.active,
+.dropdown-item.focus,
+.dropdown-item:hover,
+.dropdown-item:active,
+.dropdown-item:focus,
+.dropdown-item:focus-within {
     background-color: var(--accent-color) !important;
 
     color: var(--light-color) !important;
@@ -247,7 +264,14 @@ a.focus, a:focus {
     text-decoration: none !important;
 }
 
-:is(.dropdown-item.active, .dropdown-item.focus, .dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus, .dropdown-item:focus-within) a {
+:is(
+    .dropdown-item.active,
+    .dropdown-item.focus,
+    .dropdown-item:hover,
+    .dropdown-item:active,
+    .dropdown-item:focus,
+    .dropdown-item:focus-within
+) a {
     text-decoration: none !important;
 }
 
@@ -255,7 +279,14 @@ a.focus, a:focus {
     transition: 0.1s ease-in-out color !important;
 }
 
-:is(.dropdown-item.active, .dropdown-item.focus, .dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus, .dropdown-item:focus-within) * {
+:is(
+    .dropdown-item.active,
+    .dropdown-item.focus,
+    .dropdown-item:hover,
+    .dropdown-item:active,
+    .dropdown-item:focus,
+    .dropdown-item:focus-within
+) * {
     color: var(--light-color) !important;
 }
 
@@ -277,7 +308,9 @@ a.focus, a:focus {
     transition: 0.1s ease-in-out background-color, 0.1s ease-in-out color !important;
 }
 
-.list-group-item.active, .list-group-item:active, .list-group-item:hover {
+.list-group-item.active,
+.list-group-item:active,
+.list-group-item:hover {
     background-color: var(--accent-color) !important;
 
     color: var(--light-color) !important;
@@ -290,7 +323,11 @@ a.focus, a:focus {
     transition: 0.1s ease-in-out color !important;
 }
 
-:is(.list-group-item.active, .list-group-item:active, .list-group-item:hover) * {
+:is(
+    .list-group-item.active,
+    .list-group-item:active,
+    .list-group-item:hover
+) * {
     color: var(--light-color) !important;
 }
 
@@ -327,7 +364,8 @@ a.focus, a:focus {
 /*
     Form control
 */
-.form-control, .custom-select {
+.form-control,
+.custom-select {
     border: 0 !important;
     border-radius: 1em !important;
 
@@ -342,7 +380,8 @@ a.focus, a:focus {
     color: var(--accent-color) !important;
 }
 
-.form-control:focus, .custom-select:focus {
+.form-control:focus,
+.custom-select:focus {
     outline: var(--accent-color) solid 0.15em !important;
 
     box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
@@ -428,7 +467,8 @@ footer#page-footer a {
     color: var(--dark-color) !important;
 }
 
-.popover-region-container > div:first-child, .popover-region-container > a > div {
+.popover-region-container > div:first-child,
+.popover-region-container > a > div {
     border-width: 0.1em !important;
     border-color: var(--dark-transparent-color) !important;
 

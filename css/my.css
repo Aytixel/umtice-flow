@@ -81,7 +81,8 @@
     background: none !important;
 }
 
-.card-deck .card .coursemenubtn:hover, .card-deck .card .coursemenubtn:focus {
+.card-deck .card .coursemenubtn:hover,
+.card-deck .card .coursemenubtn:focus {
     background-color: var(--dark-color) !important;
 }
 
@@ -122,7 +123,8 @@
     background-color: var(--accent-color) !important;
 }
 
-.btn-courses a:focus, .btn-courses a:visited {
+.btn-courses a:focus,
+.btn-courses a:visited {
     color: var(--light-color) !important;
 
     text-decoration: none !important;
