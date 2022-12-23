@@ -2,35 +2,35 @@
     Page header
 */
 #page-header {
-    display: none;
+    display: none !important;
 }
 
 /*
     Page content
 */
 #page-content {
-    margin-top: 1em;
+    margin-top: 1em !important;
 }
 
 /*
     Card
 */
 .card-deck {
-    display: flex;
-    flex-flow: column;
-    gap: 0.5em;
+    display: flex !important;
+    flex-flow: column !important;
+    gap: 0.5em !important;
 
-    margin: 1em 0;
+    margin: 1em 0 !important;
 }
 
 @media (min-width: 576px) {
     .card-deck {
-        flex-flow: row wrap;
+        flex-flow: row wrap !important;
     }
 }
 
 .card-deck .card {
-    margin: 0;
+    margin: 0 !important;
 }
 
 .card-deck .card *:not(.dropdown-item) {
@@ -38,45 +38,45 @@
 }
 
 .card-deck .card .card-body > div > div > div:first-child {
-    font-size: 1.3em;
-    font-weight: bold;
+    font-size: 1.3em !important;
+    font-weight: bold !important;
 }
 
 .card-deck .card > a {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
 
-    height: 100%;
-    width: 100%;
+    height: 100% !important;
+    width: 100% !important;
 
-    border-radius: 1rem;
+    border-radius: 1rem !important;
 
-    background-color: var(--dark-color);
+    background-color: var(--dark-color) !important;
 }
 
 .card-deck .card .dashboard-card-img {
-    height: 100%;
-    width: 100%;
+    height: 100% !important;
+    width: 100% !important;
 
-    border-radius: 1rem;
+    border-radius: 1rem !important;
     
-    -webkit-mask-image: linear-gradient(#00000063, #0000001e);
-    mask-image: linear-gradient(#00000063, #0000001e);
+    -webkit-mask-image: linear-gradient(#00000063, #0000001e) !important;
+    mask-image: linear-gradient(#00000063, #0000001e) !important;
 
-    filter: blur(0.2em);
+    filter: blur(0.2em) !important;
 }
 
 .card-deck .card .card-body {
-    z-index: 2;
+    z-index: 2 !important;
 
-    min-height: 7em;
+    min-height: 7em !important;
 
     padding: 1em !important;
 }
 
 .card-deck .card .card-footer {
-    z-index: 1;
+    z-index: 1 !important;
 
     background: none !important;
 }
@@ -90,40 +90,40 @@
 */
 
 .pagination {
-    border-radius: 1em;
+    border-radius: 1em !important;
 }
 
 .pagination a {
-    border: 0;
-    border-radius: 1em;
+    border: 0 !important;
+    border-radius: 1em !important;
 }
 
 .pagination .page-link {
-    transition: 0.1s ease-in-out box-shadow;
+    transition: 0.1s ease-in-out box-shadow !important;
 }
 
 .pagination .page-item:not(.disabled) .page-link:hover {
-    background-color: var(--light-color);
+    background-color: var(--light-color) !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
 }
 
 /*
     Button courses
 */
 .btn-courses {
-    border: 0;
-    border-radius: 1em;
+    border: 0 !important;
+    border-radius: 1em !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
 }
 
 .btn-courses:hover {
-    background-color: var(--accent-color);
+    background-color: var(--accent-color) !important;
 }
 
 .btn-courses a:focus, .btn-courses a:visited {
-    color: var(--light-color);
+    color: var(--light-color) !important;
 
     text-decoration: none !important;
 }

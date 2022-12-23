@@ -7,14 +7,14 @@
 }
 
 ::selection {
-    background-color: var(--accent-color);
+    background-color: var(--accent-color) !important;
 }
 
 /*
     Logo
 */
 .logo {
-    color: var(--light-color);
+    color: var(--light-color) !important;
 }
 
 /*
@@ -28,29 +28,29 @@
     Navbar
 */
 .navbar {
-    border: 0;
+    border: 0 !important;
     background-color: var(--accent-color) !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
 }
 
 .navbar .btn {
-    box-shadow: none;
+    box-shadow: none !important;
 }
 
 .navbar .btn[data-action="toggle-drawer"] {
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1 !important;
 
-    border: 0;
-    border-radius: 1em;
+    border: 0 !important;
+    border-radius: 1em !important;
 
     background-color: transparent !important;
 
-    transition: 0.1s ease-in-out background-color, 0.1s ease-in-out box-shadow;
+    transition: 0.1s ease-in-out background-color, 0.1s ease-in-out box-shadow !important;
 }
 
 .navbar .btn[data-action="toggle-drawer"] * {
-    transition: 0.1s ease-in-out color;
+    transition: 0.1s ease-in-out color !important;
 }
 
 .navbar .btn[data-action="toggle-drawer"]:focus,
@@ -59,7 +59,7 @@
 .navbar .btn[data-action="toggle-drawer"]:active {
     background-color: var(--light-color) !important;
 
-    outline: none;
+    outline: none !important;
 
     box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
 }
@@ -94,32 +94,32 @@ a.focus, a:focus {
     Progress bar
 */
 .progress {
-    height: 0.75em;
+    height: 0.75emv;
 
     border: 0 !important;
-    border-radius: 0.375em;
+    border-radius: 0.375em !important;
 
     background-color: var(--light-color) !important;
 }
 
 .progress-bar {
-    background-color: var(--accent-color);
+    background-color: var(--accent-color) !important;
 }
 
 /*
     Button
 */
 .btn {
-    border: 0;
+    border: 0 !important;
     border-radius: 1em !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
 }
 
 .btn:focus {
-    outline: var(--accent-color) solid 0.15em;
+    outline: var(--accent-color) solid 0.15em !important;
 
-    box-shadow: none;
+    box-shadow: none !important;
 }
 
 /*
@@ -170,31 +170,31 @@ a.focus, a:focus {
 
     color: var(--dark-color) !important;
 
-    transition: 0.1s ease-in-out box-shadow;
+    transition: 0.1s ease-in-out box-shadow !important;
 }
 
 .btn-outline-secondary:focus, .btn-outline-secondary.focus {
-    color: var(--dark-color);
+    color: var(--dark-color) !important;
 
     outline: var(--accent-color) solid 0.15em !important;
 
-    box-shadow: none;
+    box-shadow: none !important;
 }
 
 .btn-outline-secondary:hover {
-    color: var(--dark-color);
+    color: var(--dark-color) !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
 }
 
 /*
     Dropdown
 */
 .dropdown-toggle {
-    border: 0;
-    border-radius: 1em;
+    border: 0 !important;
+    border-radius: 1em !important;
 
-    box-shadow: none;
+    box-shadow: none !important;
 }
 
 .dropdown-toggle:focus {
@@ -202,41 +202,41 @@ a.focus, a:focus {
 }
 
 .dropdown-menu {
-    flex-direction: column;
-    gap: 0.2em;
+    flex-direction: column !important;
+    gap: 0.2em !important;
 
-    padding: 0;
+    padding: 0 !important;
 
-    border: 0;
-    border-radius: 1em;
+    border: 0 !important;
+    border-radius: 1em !important;
 
-    background-color: var(--light-transparent-color);
+    background-color: var(--light-transparent-color) !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
 
-    backdrop-filter: blur(0.4em);
+    backdrop-filter: blur(0.4em) !important;
 }
 
 .dropdown-menu.show {
-    display: flex;
+    display: flex !important;
 }
 
 .dropdown-divider {
-    border-width: 0.1em;
-    border-color: var(--dark-transparent-color);
+    border-width: 0.1em !important;
+    border-color: var(--dark-transparent-color) !important;
 
-    backdrop-filter: blur(0.4em);
+    backdrop-filter: blur(0.4em) !important;
 }
 
 .dropdown-item {
-    border-radius: 1em;
+    border-radius: 1em !important;
 
     font-weight: bold !important;
 
     color: var(--dark-color) !important;
-    line-height: 2.5em;
+    line-height: 2.5em !important;
 
-    transition: 0.1s ease-in-out background-color, 0.1s ease-in-out color;
+    transition: 0.1s ease-in-out background-color, 0.1s ease-in-out color !important;
 }
 
 .navbar .dropdown-item:hover, .dropdown-item.active, .dropdown-item.focus, .dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus, .dropdown-item:focus-within {
@@ -252,7 +252,7 @@ a.focus, a:focus {
 }
 
 .dropdown-item * {
-    transition: 0.1s ease-in-out color;
+    transition: 0.1s ease-in-out color !important;
 }
 
 :is(.dropdown-item.active, .dropdown-item.focus, .dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus, .dropdown-item:focus-within) * {
@@ -263,35 +263,35 @@ a.focus, a:focus {
     List group
 */
 .list-group-item {
-    margin: 0.5em 0;
+    margin: 0.5em 0 !important;
 
-    border: 0;
-    border-radius: 1em;
+    border: 0 !important;
+    border-radius: 1em !important;
 
-    background-color: var(--light-color);
+    background-color: var(--light-color) !important;
 
-    color: var(--dark-color);
+    color: var(--dark-color) !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
 
-    transition: 0.1s ease-in-out background-color, 0.1s ease-in-out color;
+    transition: 0.1s ease-in-out background-color, 0.1s ease-in-out color !important;
 }
 
 .list-group-item.active, .list-group-item:active, .list-group-item:hover {
     background-color: var(--accent-color) !important;
 
-    color: var(--light-color);
+    color: var(--light-color) !important;
     text-decoration: none !important;
 
     box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
 }
 
 .list-group-item * {
-    transition: 0.1s ease-in-out color;
+    transition: 0.1s ease-in-out color !important;
 }
 
 :is(.list-group-item.active, .list-group-item:active, .list-group-item:hover) * {
-    color: var(--light-color);
+    color: var(--light-color) !important;
 }
 
 .list-group-item:focus {
@@ -308,11 +308,11 @@ a.focus, a:focus {
 
     background-color: var(--light-color) !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
 }
 
 .input-group :is(.btn, input) {
-    box-shadow: none;
+    box-shadow: none !important;
 }
 
 .input-group * {
@@ -328,14 +328,14 @@ a.focus, a:focus {
     Form control
 */
 .form-control, .custom-select {
-    border: 0;
+    border: 0 !important;
     border-radius: 1em !important;
 
     background-color: var(--light-color) !important;
 
     color: var(--dark-color) !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
 }
 
 .form-control:read-only {
@@ -343,9 +343,9 @@ a.focus, a:focus {
 }
 
 .form-control:focus, .custom-select:focus {
-    outline: var(--accent-color) solid 0.15em;
+    outline: var(--accent-color) solid 0.15em !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
 }
 
 /*
@@ -353,11 +353,11 @@ a.focus, a:focus {
 */
 .card {
     border: 0 !important;
-    border-radius: 1em;
+    border-radius: 1em !important;
 
     background-color: transparent !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
 }
 
 /*
@@ -373,30 +373,30 @@ section {
     Nav drawer
 */
 #nav-drawer {
-    background-color: var(--light-color);
+    background-color: var(--light-color) !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
 }
 
 /*
     Page
 */
 #page {
-    background-color: var(--light-color);
+    background-color: var(--light-color) !important;
 }
 
 /*
     Page footer
 */
 footer#page-footer {
-    border: 0;
+    border: 0 !important;
     background-color: var(--dark-color) !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
 }
 
 footer#page-footer * {
-    color: var(--light-color);
+    color: var(--light-color) !important;
 }
 
 footer#page-footer a {
@@ -407,21 +407,21 @@ footer#page-footer a {
     Searchform navbar
 */
 #searchform-navbar {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 /*
     Popover region
 */
 .popover-region-container {
-    border: 0;
-    border-radius: 1em;
+    border: 0 !important;
+    border-radius: 1em !important;
 
-    background-color: var(--light-transparent-color);
+    background-color: var(--light-transparent-color) !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color);
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
 
-    backdrop-filter: blur(0.4em);
+    backdrop-filter: blur(0.4em) !important;
 }
 
 .popover-region-container * {
@@ -429,12 +429,12 @@ footer#page-footer a {
 }
 
 .popover-region-container > div:first-child, .popover-region-container > a > div {
-    border-width: 0.1em;
-    border-color: var(--dark-transparent-color);
+    border-width: 0.1em !important;
+    border-color: var(--dark-transparent-color) !important;
 
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 #nav-notification-popover-container .popover-region-toggle::after {
-    display: none;
+    display: none !important;
 }
