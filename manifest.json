@@ -3,7 +3,10 @@
   "name": "Umtice Flow",
   "version": "1.0",
   "description": "Un nouveau look pour un truc moche.",
-  "icons": {},
+  "icons": {
+    "128": "icon/icon-128x128.png",
+    "96": "icon/icon-96x96.png"
+  },
   "content_scripts": [
     {
         "matches": ["*://umtice.univ-lemans.fr/*"],
