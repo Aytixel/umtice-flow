@@ -71,9 +71,8 @@
     .navbar .btn[data-action="toggle-drawer"].active,
     .navbar .btn[data-action="toggle-drawer"]:active
 ) *,
-.navbar .dropdown-item,
 .navbar .dropdown-item * {
-    color: var(--dark-color) !important;
+    color: inherit !important;
 }
 
 .navbar *,
@@ -99,9 +98,17 @@ a:focus {
     Progress bar
 */
 .progress {
-    height: 0.75emv;
+    height: 0.75em !important;
     
     border-radius: 0.375em !important;
+
+    background-color: var(--light-color) !important;
+
+    outline: var(--light-color) solid 0.175em !important;
+}
+
+.progress + .small {
+    margin-top: 0.5em;
 }
 
 .progress-bar {
@@ -244,7 +251,6 @@ a:focus {
     transition: 0.1s ease-in-out background-color, 0.1s ease-in-out color;
 }
 
-.navbar .dropdown-item:hover,
 .dropdown-item.active,
 .dropdown-item.focus,
 .dropdown-item:hover,
@@ -270,18 +276,9 @@ a:focus {
 }
 
 .dropdown-item * {
-    transition: 0.1s ease-in-out color;
-}
+    color: inherit;
 
-:is(
-    .dropdown-item.active,
-    .dropdown-item.focus,
-    .dropdown-item:hover,
-    .dropdown-item:active,
-    .dropdown-item:focus,
-    .dropdown-item:focus-within
-) * {
-    color: var(--light-color) !important;
+    transition: 0.1s ease-in-out color;
 }
 
 /*
@@ -314,15 +311,9 @@ a:focus {
 }
 
 .list-group-item * {
-    transition: 0.1s ease-in-out color;
-}
+    color: inherit;
 
-:is(
-    .list-group-item.active,
-    .list-group-item:active,
-    .list-group-item:hover
-) * {
-    color: var(--light-color) !important;
+    transition: 0.1s ease-in-out color;
 }
 
 .list-group-item:focus {

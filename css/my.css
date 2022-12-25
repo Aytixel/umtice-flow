@@ -35,15 +35,12 @@
 
 .card-deck .card {
     margin: 0 !important;
+
+    color: var(--light-color);
 }
 
-.card-deck .card *:not(.dropdown-item) {
-    color: var(--light-color) !important;
-}
-
-.card-deck .card .card-body > div > div > div:first-child {
-    font-size: 1.3em !important;
-    font-weight: bold !important;
+.card-deck .card * {
+    color: inherit !important;
 }
 
 .card-deck .card > a {
@@ -85,9 +82,66 @@
     background: none !important;
 }
 
-.card-deck .card .coursemenubtn:hover,
-.card-deck .card .coursemenubtn:focus {
+.card-deck .card .dropdown-item {
+    color: var(--dark-color) !important;
+}
+
+.card-deck .card :is( 
+    .dropdown-item.active,
+    .dropdown-item.focus,
+    .dropdown-item:hover,
+    .dropdown-item:active,
+    .dropdown-item:focus,
+    .dropdown-item:focus-within
+) {
+    background-color: var(--accent-color) !important;
+
+    color: var(--light-color) !important;
+
+    text-decoration: none !important;
+}
+
+/*
+    Course summary item
+*/
+.course-summaryitem {
+    margin-bottom: 0.5em !important;
+
+    border: 0 !important;
+    border-radius: 1rem !important;
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+}
+
+.course-summaryitem:last-child {
+    margin-bottom: 0 !important;
+}
+
+.course-summaryitem .summaryimage {
+    margin-right: 1em !important;
+
+    border-radius: 1rem !important;
+    
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+}
+
+/*
+    Course content
+*/
+[data-region="course-content"] .categoryname {
+    font-size: 1.3em !important;
+    font-weight: bold !important;
+}
+
+[data-region="course-content"] .text-muted {
+    color: inherit !important;
+}
+
+[data-region="course-content"] .coursemenubtn:hover,
+[data-region="course-content"] .coursemenubtn:focus {
     background-color: var(--dark-color) !important;
+
+    color: var(--light-color) !important;
 }
 
 /*
