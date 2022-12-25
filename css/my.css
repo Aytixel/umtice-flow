@@ -17,6 +17,33 @@
 }
 
 /*
+    Course content
+*/
+[data-region="course-content"] .categoryname {
+    font-size: 1.3em !important;
+    font-weight: bold !important;
+}
+
+[data-region="course-content"] .text-muted {
+    color: var(--dark-color) !important;
+}
+
+:is(
+    [data-region="course-content"].active,
+    [data-region="course-content"]:active,
+    [data-region="course-content"]:hover
+) .text-muted {
+    color: var(--light-color) !important;
+}
+
+[data-region="course-content"] .coursemenubtn:hover,
+[data-region="course-content"] .coursemenubtn:focus {
+    background-color: var(--dark-color) !important;
+
+    color: var(--light-color) !important;
+}
+
+/*
     Card
 */
 .card-deck {
@@ -102,6 +129,21 @@
 }
 
 /*
+    Course list item
+*/
+.course-listitem:is(
+    .list-group-item.active,
+    .list-group-item:active,
+    .list-group-item:hover
+) .dropdown-item:not(:hover) {
+    color: var(--dark-color) !important;
+}
+
+.course-listitem .coursemenubtn:focus * {
+    color: var(--light-color) !important;
+}
+
+/*
     Course summary item
 */
 .course-summaryitem {
@@ -123,25 +165,6 @@
     border-radius: 1rem !important;
     
     box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
-}
-
-/*
-    Course content
-*/
-[data-region="course-content"] .categoryname {
-    font-size: 1.3em !important;
-    font-weight: bold !important;
-}
-
-[data-region="course-content"] .text-muted {
-    color: inherit !important;
-}
-
-[data-region="course-content"] .coursemenubtn:hover,
-[data-region="course-content"] .coursemenubtn:focus {
-    background-color: var(--dark-color) !important;
-
-    color: var(--light-color) !important;
 }
 
 /*
