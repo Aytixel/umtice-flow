@@ -1,4 +1,4 @@
-#inst175550 > div > div > div.no-overflow {
+#inst175550>div>div>div.no-overflow {
     overflow: visible;
 }
 
@@ -19,9 +19,13 @@
 /*
     Course content
 */
-[data-region="course-content"] .categoryname {
+:is([data-region="course-content"], [data-region="view-content"]) .coursename :is(.multiline, .text-truncate) {
     font-size: 1.3em !important;
     font-weight: bold !important;
+}
+
+[data-region="view-content"] .coursename .text-truncate {
+    font-size: 1.1em !important;
 }
 
 [data-region="course-content"] .coursemenubtn:hover,
@@ -58,7 +62,7 @@
     color: inherit !important;
 }
 
-.card-deck .card > a {
+.card-deck .card>a {
     position: absolute !important;
     top: 0 !important;
     left: 0 !important;
@@ -76,7 +80,7 @@
     width: 100% !important;
 
     border-radius: 1rem !important;
-    
+
     -webkit-mask-image: linear-gradient(#00000063, #0000001e) !important;
     mask-image: linear-gradient(#00000063, #0000001e) !important;
 
@@ -101,14 +105,12 @@
     color: var(--dark-color) !important;
 }
 
-.card-deck .card :is( 
-    .dropdown-item.active,
+.card-deck .card :is(.dropdown-item.active,
     .dropdown-item.focus,
     .dropdown-item:hover,
     .dropdown-item:active,
     .dropdown-item:focus,
-    .dropdown-item:focus-within
-) {
+    .dropdown-item:focus-within) {
     background-color: var(--accent-color) !important;
 
     color: var(--light-color) !important;
@@ -119,11 +121,9 @@
 /*
     Course list item
 */
-.course-listitem:is(
-    .list-group-item.active,
+.course-listitem:is(.list-group-item.active,
     .list-group-item:active,
-    .list-group-item:hover
-) .dropdown-item:not(:hover) {
+    .list-group-item:hover) .dropdown-item:not(:hover) {
     color: var(--dark-color) !important;
 }
 
@@ -135,11 +135,9 @@
     color: var(--dark-color) !important;
 }
 
-:is(
-    .course-listitem.active,
+:is(.course-listitem.active,
     .course-listitem:active,
-    .course-listitem:hover
-) .text-muted {
+    .course-listitem:hover) .text-muted {
     color: var(--light-color) !important;
 }
 
@@ -163,7 +161,7 @@
     margin-right: 1em !important;
 
     border-radius: 1rem !important;
-    
+
     box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
 }
 

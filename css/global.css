@@ -71,12 +71,10 @@
     box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
 }
 
-:is(
-    .navbar .btn[data-action="toggle-drawer"]:focus,
+:is(.navbar .btn[data-action="toggle-drawer"]:focus,
     .navbar .btn[data-action="toggle-drawer"]:hover,
     .navbar .btn[data-action="toggle-drawer"].active,
-    .navbar .btn[data-action="toggle-drawer"]:active
-) *,
+    .navbar .btn[data-action="toggle-drawer"]:active) *,
 .navbar .dropdown-item * {
     color: inherit !important;
 }
@@ -95,7 +93,7 @@ a:focus {
     background-color: initial !important;
 
     outline: none !important;
-    
+
     box-shadow: none !important;
 
     text-decoration: underline !important;
@@ -106,7 +104,7 @@ a:focus {
 */
 .progress {
     height: 0.75em !important;
-    
+
     border-radius: 0.375em !important;
 
     background-color: var(--light-color) !important;
@@ -114,7 +112,7 @@ a:focus {
     outline: var(--light-color) solid 0.175em !important;
 }
 
-.progress + .small {
+.progress+.small {
     margin-top: 0.5em;
 }
 
@@ -150,7 +148,7 @@ a:focus {
 .btn-primary:active,
 .btn-primary:focus {
     background-color: var(--light-color) !important;
-    
+
     color: var(--dark-color) !important;
 
     text-decoration: none !important;
@@ -163,7 +161,7 @@ a:focus {
 */
 .btn-secondary {
     background-color: var(--dark-color) !important;
-    
+
     color: var(--light-color) !important;
 
     text-decoration: none !important;
@@ -172,7 +170,7 @@ a:focus {
 .btn-secondary:active,
 .btn-secondary:focus {
     background-color: var(--light-color) !important;
-    
+
     color: var(--dark-color) !important;
 
     text-decoration: none !important;
@@ -271,14 +269,12 @@ a:focus {
     text-decoration: none !important;
 }
 
-:is(
-    .dropdown-item.active,
+:is(.dropdown-item.active,
     .dropdown-item.focus,
     .dropdown-item:hover,
     .dropdown-item:active,
     .dropdown-item:focus,
-    .dropdown-item:focus-within
-) a {
+    .dropdown-item:focus-within) a {
     text-decoration: none !important;
 }
 
@@ -323,11 +319,9 @@ a:focus {
     transition: 0.1s ease-in-out color;
 }
 
-:is(
-    .list-group-item.active,
+:is(.list-group-item.active,
     .list-group-item:active,
-    .list-group-item:hover
-) * {
+    .list-group-item:hover) * {
     color: var(--light-color) !important;
 }
 
@@ -399,6 +393,17 @@ a:focus {
     box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
 }
 
+.card-header {
+    border: 0 !important;
+    border-radius: 1em !important;
+
+    background-color: var(--accent-color) !important;
+}
+
+.card-header * {
+    color: var(--light-color) !important;
+}
+
 /*
     Section
 */
@@ -466,8 +471,8 @@ footer#page-footer a {
     color: var(--dark-color) !important;
 }
 
-.popover-region-container > div:first-child,
-.popover-region-container > a > div {
+.popover-region-container>div:first-child,
+.popover-region-container>a>div {
     border-width: 0.1em !important;
     border-color: var(--dark-transparent-color) !important;
 
@@ -476,4 +481,82 @@ footer#page-footer a {
 
 #nav-notification-popover-container .popover-region-toggle::after {
     display: none !important;
+}
+
+/*
+    Forum Post
+*/
+.forumpost {
+    border: none !important;
+    border-radius: 1em !important;
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+}
+
+.forumpost .no-overflow {
+    overflow: visible !important;
+}
+
+/*
+    Popover
+*/
+[data-toggle="popover"] {
+    display: block !important;
+
+    height: 1.5em !important;
+    width: 1.5em !important;
+}
+
+[data-toggle="popover"] i {
+    height: inherit !important;
+    width: inherit !important;
+}
+
+/*
+    Message
+*/
+[data-region="message-drawer"],
+[data-region="right-hand-drawer"] {
+    background-color: transparent !important;
+}
+
+[data-region="message-drawer"],
+[data-region="emoji-picker-container"] {
+    background-color: var(--light-transparent-color) !important;
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+
+    backdrop-filter: blur(0.4em) !important;
+}
+
+[data-region="message"] {
+    background-color: var(--light-color) !important;
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+
+    filter: none !important;
+}
+
+[data-region="message"] .tail {
+    display: none !important;
+}
+
+[data-region="view-overview"] [data-region^="view-overview"] {
+    box-shadow: none !important;
+}
+
+[data-region="view-contacts"] .nav-item {
+    background-color: transparent !important;
+}
+
+[data-region="view-contacts"] .nav-item a {
+    text-decoration: none !important;
+}
+
+[data-region="view-contacts"] .nav-item a.active {
+    border-radius: 1em !important;
+
+    background-color: var(--accent-color) !important;
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
 }
