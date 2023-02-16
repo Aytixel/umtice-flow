@@ -26,3 +26,10 @@ footer#page-footer {
 `
 
 document.head.append(style)
+
+for (const link of [...document.querySelectorAll("#region-main a.aalink")]) {
+    link.onclick = ""
+    link.removeAttribute("onclick")
+    link.href += "&redirect=1"
+    link.target = "_blank"
+}
