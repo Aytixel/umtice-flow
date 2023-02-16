@@ -8,6 +8,11 @@
 
 ::selection {
     background-color: var(--accent-color) !important;
+    color: var(--light-color) !important;
+}
+
+body {
+    background-color: var(--light-color) !important;
 }
 
 /*
