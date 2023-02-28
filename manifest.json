@@ -17,6 +17,10 @@
         "js": ["js/global.js"]
     },
     {
+        "matches": ["*://umtice.univ-lemans.fr/message/*"],
+        "css": ["css/message.css"]
+    },
+    {
         "matches": ["*://umtice.univ-lemans.fr/my/*"],
         "css": ["css/my.css"]
     },
@@ -31,6 +35,10 @@
           "css/global.css"
         ],
         "js": ["js/global.js"]
+    },
+    {
+        "matches": ["*://umtice2.univ-lemans.fr/message/*"],
+        "css": ["css/message.css"]
     },
     {
         "matches": ["*://umtice2.univ-lemans.fr/my/*"],

@@ -1,7 +1,10 @@
 :root {
     --light-color: #ffffff;
     --light-transparent-color: #ffffffa0;
-    --accent-color: #2b3a6c;
+    --accent-color: #2a55e2;
     --dark-color: #292929;
     --dark-transparent-color: #292929a0;
+
+    --light-shadow-color: var(--dark-color);
+    --dark-shadow-color: #000;
 }

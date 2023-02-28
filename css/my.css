@@ -30,9 +30,9 @@
 
 [data-region="course-content"] .coursemenubtn:hover,
 [data-region="course-content"] .coursemenubtn:focus {
-    background-color: var(--dark-color) !important;
+    background-color: var(--dark-theme-color) !important;
 
-    color: var(--light-color) !important;
+    color: var(--light-theme-color) !important;
 }
 
 /*
@@ -44,6 +44,8 @@
     gap: 0.5em !important;
 
     margin: 1em 0 !important;
+
+    overflow: visible !important;
 }
 
 @media (min-width: 576px) {
@@ -102,7 +104,7 @@
 }
 
 .card-deck .card .dropdown-item {
-    color: var(--dark-color) !important;
+    color: var(--dark-theme-color) !important;
 }
 
 .card-deck .card :is(.dropdown-item.active,
@@ -124,20 +126,20 @@
 .course-listitem:is(.list-group-item.active,
     .list-group-item:active,
     .list-group-item:hover) .dropdown-item:not(:hover) {
-    color: var(--dark-color) !important;
+    color: var(--dark-theme-color) !important;
 }
 
 .course-listitem .coursemenubtn:focus * {
-    color: var(--light-color) !important;
+    color: var(--light-theme-color) !important;
 }
 
 .course-listitem .text-muted {
-    color: var(--dark-color) !important;
+    color: var(--dark-theme-color) !important;
 }
 
 :is(.course-listitem.active,
     .course-listitem:active,
-    .course-listitem:hover) .text-muted {
+    .course-listitem:hover) * {
     color: var(--light-color) !important;
 }
 
@@ -150,7 +152,9 @@
     border: 0 !important;
     border-radius: 1rem !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+    background-color: var(--light-theme-color) !important;
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
 }
 
 .course-summaryitem:last-child {
@@ -162,11 +166,11 @@
 
     border-radius: 1rem !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
 }
 
 .course-summaryitem .text-muted {
-    color: var(--dark-color) !important;
+    color: var(--dark-theme-color) !important;
 }
 
 /*
@@ -183,13 +187,15 @@
 }
 
 .pagination .page-link {
+    background-color: var(--light-theme-color) !important;
+
     transition: 0.1s ease-in-out box-shadow;
 }
 
 .pagination .page-item:not(.disabled) .page-link:hover {
-    background-color: var(--light-color) !important;
+    background-color: var(--light-theme-color) !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
 }
 
 /*
@@ -199,7 +205,9 @@
     border: 0 !important;
     border-radius: 1em !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+    background-color: var(--accent-color) !important;
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
 }
 
 .btn-courses:hover {

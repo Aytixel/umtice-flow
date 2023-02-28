@@ -1,9 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
 
+:root {
+    --light-theme-color: var(--light-color);
+    --light-theme-transparent-color: var(--light-transparent-color);
+    --dark-theme-color: var(--dark-color);
+    --dark-theme-transparent-color: var(--dark-transparent-color);
+
+    --shadow-theme-color: var(--light-shadow-color);
+}
+
+:root:not(.light).dark {
+    --light-theme-color: var(--dark-color);
+    --light-theme-transparent-color: var(--dark-transparent-color);
+    --dark-theme-color: var(--light-color);
+    --dark-theme-transparent-color: var(--light-transparent-color);
+
+    --shadow-theme-color: var(--dark-shadow-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not(.light) {
+        --light-theme-color: var(--dark-color);
+        --light-theme-transparent-color: var(--dark-transparent-color);
+        --dark-theme-color: var(--light-color);
+        --dark-theme-transparent-color: var(--light-transparent-color);
+
+        --shadow-theme-color: var(--dark-shadow-color);
+    }
+}
+
 * {
     font-family: 'Mulish', sans-serif;
 
-    color: var(--dark-color);
+    color: var(--dark-theme-color);
 }
 
 ::selection {
@@ -12,14 +41,31 @@
 }
 
 body {
-    background-color: var(--light-color) !important;
+    background-color: var(--light-theme-color) !important;
 }
 
 /*
-    Logo
+    Background
 */
-.logo {
-    color: var(--light-color) !important;
+.bg-white,
+.bg-light {
+    background-color: var(--light-theme-color) !important;
+}
+
+/*
+    Link
+*/
+a.focus,
+a:focus {
+    background-color: initial !important;
+
+    outline: none !important;
+
+    box-shadow: none !important;
+
+    color: var(--dark-theme-color) !important;
+
+    text-decoration: underline !important;
 }
 
 /*
@@ -37,7 +83,9 @@ body {
 .navbar {
     border: 0 !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+    background-color: var(--accent-color) !important;
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
 }
 
 .navbar *:focus {
@@ -73,7 +121,7 @@ body {
 
     outline: none !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
 }
 
 :is(.navbar .btn[data-action="toggle-drawer"]:focus,
@@ -90,18 +138,17 @@ body {
     color: var(--light-color) !important;
 }
 
-/*
-    Link
-*/
-a.focus,
-a:focus {
-    background-color: initial !important;
+.navbar .usermenu .icon,
+.navbar-dark a .icon {
+    color: inherit !important;
+}
 
-    outline: none !important;
+.navbar .dropdown-item:hover {
+    color: var(--light-color) !important;
+}
 
-    box-shadow: none !important;
-
-    text-decoration: underline !important;
+.navbar .notification a {
+    color: var(--dark-theme-color) !important;
 }
 
 /*
@@ -110,6 +157,7 @@ a:focus {
 .progress {
     height: 0.75em !important;
 
+    border: 0 !important;
     border-radius: 0.375em !important;
 
     background-color: var(--light-color) !important;
@@ -132,7 +180,7 @@ a:focus {
     border: 0 !important;
     border-radius: 1em !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
 }
 
 .btn:focus {
@@ -152,61 +200,61 @@ a:focus {
 
 .btn-primary:active,
 .btn-primary:focus {
-    background-color: var(--light-color) !important;
+    background-color: var(--light-theme-color) !important;
 
-    color: var(--dark-color) !important;
+    color: var(--dark-theme-color) !important;
 
     text-decoration: none !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
 }
 
 /*
     Button secondary
 */
 .btn-secondary {
-    background-color: var(--dark-color) !important;
+    background-color: var(--dark-theme-color) !important;
 
-    color: var(--light-color) !important;
+    color: var(--light-theme-color) !important;
 
     text-decoration: none !important;
 }
 
 .btn-secondary:active,
 .btn-secondary:focus {
-    background-color: var(--light-color) !important;
+    background-color: var(--light-theme-color) !important;
 
-    color: var(--dark-color) !important;
+    color: var(--dark-theme-color) !important;
 
     text-decoration: none !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
 }
 
 /*
     Button outline secondary
 */
 .btn-outline-secondary {
-    background-color: var(--light-color) !important;
+    background-color: var(--light-theme-color) !important;
 
-    color: var(--dark-color) !important;
+    color: var(--dark-theme-color) !important;
 
     transition: 0.1s ease-in-out box-shadow;
 }
 
 .btn-outline-secondary:focus,
 .btn-outline-secondary.focus {
-    color: var(--dark-color) !important;
+    color: var(--dark-theme-color) !important;
 
-    outline: var(--accent-color) solid 0.15em !important;
+    outline: var(--accent-theme-color) solid 0.15em !important;
 
     box-shadow: none !important;
 }
 
 .btn-outline-secondary:hover {
-    color: var(--dark-color) !important;
+    color: var(--dark-theme-color) !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
 }
 
 /*
@@ -232,9 +280,9 @@ a:focus {
     border: 0 !important;
     border-radius: 1em !important;
 
-    background-color: var(--light-transparent-color) !important;
+    background-color: var(--light-theme-transparent-color) !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
 
     backdrop-filter: blur(0.4em) !important;
 }
@@ -245,7 +293,7 @@ a:focus {
 
 .dropdown-divider {
     border-width: 0.1em !important;
-    border-color: var(--dark-transparent-color) !important;
+    border-color: var(--dark-theme-transparent-color) !important;
 
     backdrop-filter: blur(0.4em) !important;
 }
@@ -255,7 +303,7 @@ a:focus {
 
     font-weight: bold !important;
 
-    color: var(--dark-color) !important;
+    color: var(--dark-theme-color) !important;
     line-height: 2.5em !important;
 
     transition: 0.1s ease-in-out background-color, 0.1s ease-in-out color;
@@ -284,7 +332,7 @@ a:focus {
 }
 
 .dropdown-item * {
-    color: inherit;
+    color: inherit !important;
 
     transition: 0.1s ease-in-out color;
 }
@@ -298,11 +346,11 @@ a:focus {
     border: 0 !important;
     border-radius: 1em !important;
 
-    background-color: var(--light-color) !important;
+    background-color: var(--light-theme-color) !important;
 
-    color: var(--dark-color) !important;
+    color: var(--dark-theme-color) !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
 
     transition: 0.1s ease-in-out background-color, 0.1s ease-in-out color;
 }
@@ -315,11 +363,11 @@ a:focus {
     color: var(--light-color) !important;
     text-decoration: none !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
 }
 
 .list-group-item * {
-    color: var(--dark-color) !important;
+    color: var(--dark-theme-color) !important;
 
     transition: 0.1s ease-in-out color;
 }
@@ -327,7 +375,7 @@ a:focus {
 :is(.list-group-item.active,
     .list-group-item:active,
     .list-group-item:hover) * {
-    color: var(--light-color) !important;
+    color: inherit !important;
 }
 
 .list-group-item:focus {
@@ -342,9 +390,9 @@ a:focus {
 .input-group {
     border-radius: 1em !important;
 
-    background-color: var(--light-color) !important;
+    background-color: var(--light-theme-color) !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
 }
 
 .input-group :is(.btn, input) {
@@ -357,7 +405,7 @@ a:focus {
 
     background-color: transparent !important;
 
-    color: var(--dark-color) !important;
+    color: var(--dark-theme-color) !important;
 }
 
 /*
@@ -368,11 +416,11 @@ a:focus {
     border: 0 !important;
     border-radius: 1em !important;
 
-    background-color: var(--light-color) !important;
+    background-color: var(--light-theme-color) !important;
 
-    color: var(--dark-color) !important;
+    color: var(--dark-theme-color) !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
 }
 
 .form-control:read-only {
@@ -383,7 +431,7 @@ a:focus {
 .custom-select:focus {
     outline: var(--accent-color) solid 0.15em !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
 }
 
 /*
@@ -395,7 +443,7 @@ a:focus {
 
     background-color: transparent !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
 }
 
 .card-header {
@@ -422,16 +470,16 @@ section {
     Nav drawer
 */
 #nav-drawer {
-    background-color: var(--light-color) !important;
+    background-color: var(--light-theme-color) !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
 }
 
 /*
     Page
 */
 #page {
-    background-color: var(--light-color) !important;
+    background-color: var(--light-theme-color) !important;
 }
 
 /*
@@ -440,7 +488,9 @@ section {
 footer#page-footer {
     border: 0 !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+    background-color: var(--dark-color) !important;
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
 }
 
 footer#page-footer * {
@@ -465,21 +515,21 @@ footer#page-footer a {
     border: 0 !important;
     border-radius: 1em !important;
 
-    background-color: var(--light-transparent-color) !important;
+    background-color: var(--light-theme-transparent-color) !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
 
     backdrop-filter: blur(0.4em) !important;
 }
 
 .popover-region-container * {
-    color: var(--dark-color) !important;
+    color: var(--dark-theme-color) !important;
 }
 
 .popover-region-container>div:first-child,
 .popover-region-container>a>div {
     border-width: 0.1em !important;
-    border-color: var(--dark-transparent-color) !important;
+    border-color: var(--dark-theme-transparent-color) !important;
 
     background-color: transparent !important;
 }
@@ -495,7 +545,7 @@ footer#page-footer a {
     border: none !important;
     border-radius: 1em !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
 }
 
 .forumpost .no-overflow {
@@ -517,6 +567,19 @@ footer#page-footer a {
     width: inherit !important;
 }
 
+[data-toggle="popover"] i::before {
+    color: var(--dark-theme-color) !important;
+}
+
+.popover .popover-body {
+    background-color: var(--light-theme-color) !important;
+}
+
+.popover .arrow:before,
+.popover .arrow:after {
+    border: none !important;
+}
+
 /*
     Message
 */
@@ -527,17 +590,17 @@ footer#page-footer a {
 
 [data-region="message-drawer"],
 [data-region="emoji-picker-container"] {
-    background-color: var(--light-transparent-color) !important;
+    background-color: var(--light-theme-transparent-color) !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
 
     backdrop-filter: blur(0.4em) !important;
 }
 
 [data-region="message"] {
-    background-color: var(--light-color) !important;
+    background-color: var(--light-theme-color) !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
 
     filter: none !important;
 }
@@ -563,5 +626,58 @@ footer#page-footer a {
 
     background-color: var(--accent-color) !important;
 
-    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--dark-color) !important;
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
+}
+
+[data-region="view-conversation"] .btn {
+    background-color: var(--light-theme-color) !important;
+}
+
+/*
+    Region Main
+*/
+#region-main {
+    background-color: transparent !important;
+}
+
+/*
+    Table
+*/
+:is(td, th):not([bgcolor]) {
+    background-color: transparent !important;
+}
+
+:is(td, th)[bgcolor] {
+    color: var(--dark-color) !important;
+}
+
+:is(td, th) * {
+    color: inherit !important;
+}
+
+/*
+    Colored span
+*/
+span[style~="background-color:"] {
+    color: var(--dark-color) !important;
+}
+
+span[style~="background-color:"] * {
+    color: inherit !important;
+}
+
+/*
+    Theme selector
+*/
+footer#page-footer #theme_selector,
+footer#page-footer #theme_selector * {
+    color: var(--dark-theme-color) !important;
+}
+
+#theme_selector_container svg {
+    height: 1.5em;
+
+    margin-right: 0.5em;
+
+    fill: var(--light-color);
 }

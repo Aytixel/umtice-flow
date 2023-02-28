@@ -4,4 +4,7 @@
     --accent-color: #e5512b;
     --dark-color: #292929;
     --dark-transparent-color: #292929a0;
+
+    --light-shadow-color: var(--dark-color);
+    --dark-shadow-color: #000;
 }
