@@ -1,0 +1,12 @@
+.submissionnotgraded,
+.submissionstatussubmitted {
+    color: var(--accent-color) !important;
+}
+
+.fp-thumbnail,
+.fp-thumbnail img,
+.fp-filename {
+    border: none !important;
+
+    background-color: transparent !important;
+}

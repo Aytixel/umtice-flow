@@ -195,7 +195,13 @@ a:focus {
 .btn-primary {
     background-color: var(--accent-color) !important;
 
+    color: var(--light-color) !important;
+
     text-decoration: none !important;
+}
+
+.btn-primary * {
+    color: var(--light-color) !important;
 }
 
 .btn-primary:active,
@@ -209,6 +215,11 @@ a:focus {
     box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
 }
 
+.btn-primary:active *,
+.btn-primary:focus * {
+    color: var(--dark-theme-color) !important;
+}
+
 /*
     Button secondary
 */
@@ -220,6 +231,10 @@ a:focus {
     text-decoration: none !important;
 }
 
+.btn-secondary * {
+    color: var(--light-theme-color) !important;
+}
+
 .btn-secondary:active,
 .btn-secondary:focus {
     background-color: var(--light-theme-color) !important;
@@ -229,6 +244,11 @@ a:focus {
     text-decoration: none !important;
 
     box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
+}
+
+.btn-secondary:active *,
+.btn-secondary:focus * {
+    color: var(--dark-theme-color) !important;
 }
 
 /*
@@ -513,7 +533,6 @@ footer#page-footer a {
 */
 .popover-region-container {
     border: 0 !important;
-    border-radius: 1em !important;
 
     background-color: var(--light-theme-transparent-color) !important;
 
@@ -571,8 +590,19 @@ footer#page-footer a {
     color: var(--dark-theme-color) !important;
 }
 
+.popover {
+    border: none !important;
+    border-radius: 1em !important;
+
+    background-color: var(--light-theme-transparent-color) !important;
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
+
+    backdrop-filter: blur(0.7em) !important;
+}
+
 .popover .popover-body {
-    background-color: var(--light-theme-color) !important;
+    background-color: transparent !important;
 }
 
 .popover .arrow:before,
@@ -667,11 +697,33 @@ span[style~="background-color:"] * {
 }
 
 /*
+    Moodle dialogue
+*/
+.moodle-dialogue-content {
+    border: none !important;
+    border-radius: 1em !important;
+
+    background-color: var(--light-theme-transparent-color) !important;
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
+
+    backdrop-filter: blur(0.4em) !important;
+}
+
+.closebutton:after {
+    color: var(--dark-theme-color) !important;
+}
+
+/*
     Theme selector
 */
 footer#page-footer #theme_selector,
 footer#page-footer #theme_selector * {
     color: var(--dark-theme-color) !important;
+}
+
+#theme_selector {
+    margin-left: 0.5em;
 }
 
 #theme_selector_container svg {

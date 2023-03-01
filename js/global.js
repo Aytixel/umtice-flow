@@ -76,7 +76,7 @@ for (const link of [...document.querySelectorAll("#region-main a.aalink")]) {
     link.target = "_blank"
 }
 
-document.documentElement.classList.add(localStorage.getItem("selected_theme"))
+if (localStorage.getItem("selected_theme").length) document.documentElement.classList.add(localStorage.getItem("selected_theme"))
 
 const theme_selector = document.createElement("select")
 
@@ -97,7 +97,9 @@ theme_selector.addEventListener("change", () => {
     const selected_theme = theme_selector.value.replace("auto", "")
 
     document.documentElement.classList.remove("light", "dark")
-    document.documentElement.classList.add(selected_theme)
+
+    if (selected_theme.length) document.documentElement.classList.add(selected_theme)
+
     localStorage.setItem("selected_theme", selected_theme)
 })
 

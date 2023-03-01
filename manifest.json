@@ -17,6 +17,18 @@
         "js": ["js/global.js"]
     },
     {
+        "matches": ["*://umtice.univ-lemans.fr/"],
+        "css": ["css/index.css"]
+    },
+    {
+        "matches": ["*://umtice.univ-lemans.fr/login/"],
+        "css": ["css/login.css"]
+    },
+    {
+        "matches": ["*://umtice.univ-lemans.fr/mod/assign/view.php*"],
+        "css": ["css/assign.css"]
+    },
+    {
         "matches": ["*://umtice.univ-lemans.fr/message/*"],
         "css": ["css/message.css"]
     },
@@ -28,6 +40,9 @@
         "matches": ["*://umtice.univ-lemans.fr/course/view.php?id=*"],
         "css": ["css/cource.css"]
     },
+
+
+    
     {
         "matches": ["*://umtice2.univ-lemans.fr/*"],
         "css": [
@@ -35,6 +50,18 @@
           "css/global.css"
         ],
         "js": ["js/global.js"]
+    },
+    {
+        "matches": ["*://umtice2.univ-lemans.fr/"],
+        "css": ["css/index.css"]
+    },
+    {
+        "matches": ["*://umtice2.univ-lemans.fr/login/"],
+        "css": ["css/login.css"]
+    },
+    {
+        "matches": ["*://umtice2.univ-lemans.fr/mod/assign/view.php*"],
+        "css": ["css/assign.css"]
     },
     {
         "matches": ["*://umtice2.univ-lemans.fr/message/*"],
