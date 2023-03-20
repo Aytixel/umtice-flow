@@ -76,7 +76,7 @@ for (const link of [...document.querySelectorAll("#region-main a.aalink")]) {
     link.target = "_blank"
 }
 
-if (localStorage.getItem("selected_theme").length) document.documentElement.classList.add(localStorage.getItem("selected_theme"))
+if (localStorage.getItem("selected_theme")?.length) document.documentElement.classList.add(localStorage.getItem("selected_theme"))
 
 const theme_selector = document.createElement("select")
 
