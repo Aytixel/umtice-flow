@@ -6,3 +6,28 @@
     border-width: 0.1em !important;
     border-color: var(--dark-theme-transparent-color) !important;
 }
+
+.format-tiles #page .course-content ul li.section.main {
+    background-color: inherit;
+}
+
+.format-tiles .course-content .section .activity:hover {
+    background-color: inherit;
+}
+
+.format-tiles .course-content ul.tiles .tile {
+    background-color: inherit !important;
+
+    border-radius: 1em;
+    border-color: var(--dark-theme-color);
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color);
+}
+
+.format-tiles .course-content ul.tiles .tile.selected {
+    border-color: var(--accent-color);
+}
+
+.format-tiles .sectiontitle::after {
+    background-color: var(--dark-theme-color);
+}

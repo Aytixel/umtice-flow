@@ -1,79 +1,132 @@
 {
-  "manifest_version": 2,
-  "name": "Umtice Flow",
-  "version": "1.7",
-  "description": "Un nouveau look pour un truc moche.",
-  "icons": {
-    "128": "icon/icon-128x128.png",
-    "96": "icon/icon-96x96.png"
-  },
-  "content_scripts": [
-    {
-        "matches": ["*://umtice.univ-lemans.fr/*"],
-        "css": [
-          "css/pallet-1.css",
-          "css/global.css"
-        ],
-        "js": ["js/global.js"]
+    "manifest_version": 2,
+    "name": "Umtice Flow",
+    "version": "1.7",
+    "description": "Un nouveau look pour un truc moche.",
+    "icons": {
+        "128": "icon/icon-128x128.png",
+        "96": "icon/icon-96x96.png"
     },
-    {
-        "matches": ["*://umtice.univ-lemans.fr/"],
-        "css": ["css/index.css"]
-    },
-    {
-        "matches": ["*://umtice.univ-lemans.fr/login/"],
-        "css": ["css/login.css"]
-    },
-    {
-        "matches": ["*://umtice.univ-lemans.fr/mod/assign/view.php*"],
-        "css": ["css/assign.css"]
-    },
-    {
-        "matches": ["*://umtice.univ-lemans.fr/message/*"],
-        "css": ["css/message.css"]
-    },
-    {
-        "matches": ["*://umtice.univ-lemans.fr/my/*"],
-        "css": ["css/my.css"]
-    },
-    {
-        "matches": ["*://umtice.univ-lemans.fr/course/view.php?id=*"],
-        "css": ["css/cource.css"]
-    },
-
-
-    
-    {
-        "matches": ["*://umtice2.univ-lemans.fr/*"],
-        "css": [
-          "css/pallet-2.css",
-          "css/global.css"
-        ],
-        "js": ["js/global.js"]
-    },
-    {
-        "matches": ["*://umtice2.univ-lemans.fr/"],
-        "css": ["css/index.css"]
-    },
-    {
-        "matches": ["*://umtice2.univ-lemans.fr/login/"],
-        "css": ["css/login.css"]
-    },
-    {
-        "matches": ["*://umtice2.univ-lemans.fr/mod/assign/view.php*"],
-        "css": ["css/assign.css"]
-    },
-    {
-        "matches": ["*://umtice2.univ-lemans.fr/message/*"],
-        "css": ["css/message.css"]
-    },
-    {
-        "matches": ["*://umtice2.univ-lemans.fr/my/*"],
-        "css": ["css/my.css"]
-    },
-    {
-        "matches": ["*://umtice2.univ-lemans.fr/course/view.php?id=*"],
-        "css": ["css/cource.css"]
-    }
-  ]
+    "content_scripts": [
+        {
+            "matches": [
+                "*://umtice.univ-lemans.fr/*"
+            ],
+            "css": [
+                "css/pallet-1.css",
+                "css/global.css"
+            ],
+            "js": [
+                "js/global.js"
+            ]
+        },
+        {
+            "matches": [
+                "*://umtice.univ-lemans.fr/"
+            ],
+            "css": [
+                "css/index.css"
+            ]
+        },
+        {
+            "matches": [
+                "*://umtice.univ-lemans.fr/login/"
+            ],
+            "css": [
+                "css/login.css"
+            ]
+        },
+        {
+            "matches": [
+                "*://umtice.univ-lemans.fr/mod/assign/view.php*"
+            ],
+            "css": [
+                "css/assign.css"
+            ]
+        },
+        {
+            "matches": [
+                "*://umtice.univ-lemans.fr/message/*"
+            ],
+            "css": [
+                "css/message.css"
+            ]
+        },
+        {
+            "matches": [
+                "*://umtice.univ-lemans.fr/my/*"
+            ],
+            "css": [
+                "css/my.css"
+            ]
+        },
+        {
+            "matches": [
+                "*://umtice.univ-lemans.fr/course/view.php?id=*"
+            ],
+            "css": [
+                "css/cource.css"
+            ]
+        },
+        {
+            "matches": [
+                "*://umtice2.univ-lemans.fr/*"
+            ],
+            "css": [
+                "css/pallet-2.css",
+                "css/global.css"
+            ],
+            "js": [
+                "js/global.js"
+            ]
+        },
+        {
+            "matches": [
+                "*://umtice2.univ-lemans.fr/"
+            ],
+            "css": [
+                "css/index.css"
+            ]
+        },
+        {
+            "matches": [
+                "*://umtice2.univ-lemans.fr/login/"
+            ],
+            "css": [
+                "css/login.css"
+            ]
+        },
+        {
+            "matches": [
+                "*://umtice2.univ-lemans.fr/mod/assign/view.php*"
+            ],
+            "css": [
+                "css/assign.css"
+            ]
+        },
+        {
+            "matches": [
+                "*://umtice2.univ-lemans.fr/message/*"
+            ],
+            "css": [
+                "css/message.css"
+            ]
+        },
+        {
+            "matches": [
+                "*://umtice2.univ-lemans.fr/my/*"
+            ],
+            "css": [
+                "css/my.css"
+            ]
+        },
+        {
+            "matches": [
+                "*://umtice2.univ-lemans.fr/course/view.php?id=*"
+            ],
+            "css": [
+                "css/cource.css"
+            ]
+        }
+    ]
 }

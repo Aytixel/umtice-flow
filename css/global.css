@@ -733,3 +733,31 @@ footer#page-footer #theme_selector * {
 
     fill: var(--light-color);
 }
+
+/*
+
+    Modal
+
+*/
+.modal-dialog,
+.modal-dialog .close {
+    border-radius: 1em !important;
+}
+
+.modal-dialog:focus,
+.modal-dialog .close:focus {
+    outline: var(--accent-color) solid 0.15em !important;
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
+}
+
+.modal-content {
+    border: none !important;
+    border-radius: 1em !important;
+
+    background-color: var(--light-theme-transparent-color) !important;
+
+    box-shadow: 0.1em 0.1em 0.6em -0.45em var(--shadow-theme-color) !important;
+
+    backdrop-filter: blur(0.4em) !important;
+}
